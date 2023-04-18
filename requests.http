@@ -1,0 +1,17 @@
+###
+POST http://localhost:9000/api/inmuebles HTTP/1.1
+Content-Type: application/json
+
+{
+    "piso": "2",
+    "letra": "f",
+    "extension": "74",
+    "habitaciones": "3",
+    "alquilado": "true",
+    "propietario": "Verónica Díaz",
+    "email": "verood@gmail.com"
+}
+
+###
+
+GET  http://localhost:9000/api/inmuebles HTTP/1.1
