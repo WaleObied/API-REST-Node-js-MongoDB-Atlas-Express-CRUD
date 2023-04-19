@@ -1,17 +1,42 @@
 ###
+//create a new property
 POST http://localhost:9000/api/inmuebles HTTP/1.1
 Content-Type: application/json
 
 {
-    "piso": "2",
-    "letra": "f",
-    "extension": "74",
-    "habitaciones": "3",
-    "alquilado": "true",
-    "propietario": "Verónica Díaz",
-    "email": "verood@gmail.com"
+    "piso": "",
+    "letra": "",
+    "extension": "",
+    "habitaciones": "",
+    "alquilado": "",
+    "propietario": "",
+    "email": ""
 }
 
 ###
-
+//get all the property in dbs
 GET  http://localhost:9000/api/inmuebles HTTP/1.1
+
+###
+//get a property in dbs with id. Put the id in the link. 
+//example: http://localhost:9000/api/inmuebles/643f0a49299fec6ef114af46
+GET  http://localhost:9000/api/inmuebles/ HTTP/1.1
+
+###
+//update a property in dbs with id. Put the id in the link. Fill the json bellow.
+//example: http://localhost:9000/api/inmuebles/644024f23c28df2ac23cbfb8
+PUT http://localhost:9000/api/inmuebles/643f0c0903b44081d5bb5dc3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "piso": "1",
+    "letra": "a",
+    "extension": "110",
+    "habitaciones": "4",
+    "alquilado": "false",
+    "propietario": "Carlos Ruíz",
+    "email": "carruiz@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/inmuebles/643f08a4299fec6ef114af42 HTTP/1.1
