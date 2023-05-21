@@ -14,17 +14,17 @@ Content-Type: application/json
 }
 
 ###
-//get all the property in dbs
+//get all
 GET  http://localhost:9000/api/inmuebles HTTP/1.1
 
 ###
-//get a property in dbs with id. Put the id in the link. 
+//get by id
 //example: http://localhost:9000/api/inmuebles/643f0a49299fec6ef114af46
 GET  http://localhost:9000/api/inmuebles/ HTTP/1.1
 
 ###
-//update a property in dbs with id. Put the id in the link. Fill the json bellow.
-//example: http://localhost:9000/api/inmuebles/644024f23c28df2ac23cbfb8
+//update
+//the code below is an example
 PUT http://localhost:9000/api/inmuebles/643f0c0903b44081d5bb5dc3 HTTP/1.1
 Content-Type: application/json
 
@@ -39,4 +39,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:9000/api/inmuebles/643f08a4299fec6ef114af42 HTTP/1.1
+//example: http://localhost:9000/api/inmuebles/643f0a49299fec6ef114af46
+DELETE http://localhost:9000/api/inmuebles/ HTTP/1.1
